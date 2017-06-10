@@ -1,0 +1,15 @@
+no.		|program					|data											| execution history	|
+0		|lw			$s0  200($0)	| 00000004	(int4)		! data[0] to s0			| s0	0x4			|
+1		|lwc1		$f0  204($0)	| 3f000000	(0.5)		! data[1] to f0			| f0	0x3F000000	|
+2		|lwc1		$f2  204($s0)	| 3f400000	(0.75)		! data[2] to f2			| f2	0x3F400000	|
+3		|lw			$s1  20C($0)	| fffffffe	(int -2)	! data[3] to s1			| s1	0xFFFFFFFE	|
+4		|add.s		$f4  $f0 $f2	| 3fa00000	(1.25)		! f4 = f0 + f2			| f4	0x3FA00000	|
+5		|sub.s		$f6  $f2 $f0	| 3e800000	(0.25)		! f6 = f2 - f0			| f6	0x3E800000  |
+6		|swc1		$f4  220($0)	| 3fa00000	(1.25)		! f4 to data[8]			| 220	0x3FA00000	|
+7		|swc1		$f6  220($s0)	| 3e800000	(0.25)		! f6 to data[9]			| 224	0x3E800000	|
+8		|mtc1		$f8  $s0		| 00000004  (int4)		! f8 = s0				| f8	0x00000004	|
+9		|cvt.s.w	$f8  $f8		| 40800000	(4.0)		! f8 = (toFloat)f8		| f8	0x10800000	|
+10		|cvt.w.s	$f10 $f2		| 00000001	(int1)		! f10= (toInt)f2		| f10	0x00000001	|
+11		|mfc1		$s2  $f10		| 00000001	(int1)		! s2 = f10				| s2	0x00000001	|
+12		|sw			$s2  228($0)	| 00000001	(int1)		! s2 to data[10]		| 228	0x00000001	|
+13		|swc1		$f8  228($s0)	| 40800000	(1.0)		! f8 to data[11]		| 22C	0x40800000	|

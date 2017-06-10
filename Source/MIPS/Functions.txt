@@ -1,0 +1,5 @@
+CPU         : Stage 1   : Single-cycle; Separate(I+D) Single-level memory in registers; 
+                            Instructions: R-type( add, sub, and, or, slt), lw, sw, beq, jump and addi
+              Stage 2   : Pipeline, L1 caches to M10K;
+              Stage 3   : L2 ( uniform I+D ) cache, FP ALU without supercalar
+              Stage 4   : SDRAM, HPS management, Out-of-order supercalar

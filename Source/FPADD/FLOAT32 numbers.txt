@@ -1,0 +1,44 @@
+a  1.00005			3F8001A3
+b  1.000005			3F80002A
+c -1.000005			BF80002A
+d  0.000045			383CBE62 ?
+e -0.000005			B6A7C5AC
+f -5.647e37			FE29EEE8
+g  9.876554e37		7E949B1A
+h  4.229554e+37		7DFE8E98
+
+
+1-st test expected results
+
+Bs=As=0				 
+Ae=Be=7b             
+Am=Bm=CCCCCD         
+                     
+Oie=7B               
+Amo=Bmo=66666680     
+                     
+Os=0                 
+Oim=66666680         
+Oee=-1               
+                     
+Oe=7c                
+Om=CCCCCD            
+
+2-nd test expected results
+
+As=		0
+Bs=		1				 
+Ae=Be=	7F             
+Am=		8001A3
+Bm=		80002A         
+                     
+Oie=    7F          
+Amo=	4000D180
+Bmo=    40001500
+                     
+Os=     0            
+Oim=    00005E40     
+Oee=    -10 (F0)           
+                     
+Oe=     6F           
+Om=     79000000       
